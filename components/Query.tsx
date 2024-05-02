@@ -8,8 +8,8 @@ interface QueryTextProps {
 
 export default function QueryText({ query }: QueryTextProps) {
   return (
-    <div className='w-[800px] m-8 '>
-      <div className='flex items-center justify-start'>
+    <div className='w-full h-[104px] flex items-center justify-center'>
+      <div className='w-[800px] flex items-center justify-start'>
         <Image
           src={avatar}
           alt='avatar'

@@ -1,10 +1,11 @@
 type QuestionBtnProps = {
   buttonText: string;
+  onClick: () => void;
 };
 
-export default function QuestionBtn({ buttonText }: QuestionBtnProps) {
+export default function QuestionBtn({ buttonText, onClick }: QuestionBtnProps) {
   return (
-    <button className='border border-slate-300 rounded-md text-sm px-4 py-2 mr-[10px]'>
+    <button onClick={onClick} className='border border-slate-300 rounded-md text-sm px-4 py-2 mr-[10px]'>
       {buttonText}
     </button>
   );

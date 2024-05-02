@@ -14,20 +14,20 @@ export default function ChatModule() {
   ];
 
   return (
-    <div className='bg-white flex flex-col justify-start items-center w-full h-[144px] border-t border-slate-300'>
+    <div className='bg-white flex flex-col justify-start items-center w-full h-[144px] border-t border-slate-300 box-border'>
       {/* Suggested questions buttons */}
       <div className='flex justify-left h-[40px]  mt-4 w-[800px]'>
         {questions.map((question, index) => (
-          <QuestionBtn key={index} buttonText={question} />
+          <QuestionBtn key={index} buttonText={question} onClick={()=>{}}/>
         ))}
       </div>
 
       {/* Chat bar and send button */}
       <div className='flex justify-between w-[800px] h-[40px] mt-4'>
         {/* Chat bar */}
-        <div className='w-[690px] h-full border border-slate-300 rounded-md flex '>
+        <div className='w-[690px] h-full border border-slate-300 box-border rounded-md flex '>
           {/* Select menu, to be implemented with Shadcn */}
-          <div className='w-[140px] h-full border-r border-slate-300 flex items-center justify-between px-3 py-2 '>
+          <div className='w-[140px] h-full box-border border-r border-slate-300 flex items-center justify-between px-3 py-2 '>
             <Image src={chatIcon} alt='chat' />
             Chat
             <Image src={dropdownIcon} alt='dropdown' color='CBD5E1' />
