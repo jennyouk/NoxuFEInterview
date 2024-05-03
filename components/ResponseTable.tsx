@@ -16,7 +16,7 @@ interface ResponseTableProps {
 
 export default function ResponseTable({ table }: ResponseTableProps) {
   const buttonStyles =
-    'border border-slate-300 rounded-md px-4 py-2 mr-4 font-medium text-slate-900 text-sm';
+    'border border-slate-300 rounded-md px-4 py-2 mr-4 font-medium text-slate-900 text-sm border-box';
 
   const tableHeaderStyles =
     'text-slate-500 text-base pl-4 py-2 font-normal flex items-center overflow-hidden text-nowrap h-[40px] border-box';
@@ -25,7 +25,7 @@ export default function ResponseTable({ table }: ResponseTableProps) {
   for (let i = 1; i < table.length; i++) {
     for (let j = 0; j < table[0].length; j++) {
       rowData.push(
-        <div key={''+i+j} className='text-slate-900 text-base h-[40px] pl-4 py-2 font-light flex items-center border-t border-box'>
+        <div key={''+i+j} className='text-slate-900 text-base w-[574px] h-[40px] pl-4 py-2 font-light flex items-center border-t border-box'>
           <p className='overflow-hidden text-nowrap text-ellipsis'>
             {table[i][j].toString()}
           </p>

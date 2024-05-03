@@ -48,7 +48,7 @@ export default function ChatModule() {
         </div>
 
         {/* Send button */}
-        <button className='outline outline-1 outline-red-600 text-red-600 rounded-md text-sm px-4 py-2 font-medium tracking-tight'>
+        <button className='outline outline-1 outline-red-600 text-red-600 rounded-md text-sm px-4 py-2 font-medium h-[40px] w-[94px] border-box'>
           End Chat
         </button>
       </div>

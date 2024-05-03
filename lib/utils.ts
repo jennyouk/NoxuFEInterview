@@ -10,7 +10,7 @@ export function showChart() {}
 export function showFullList() {}
 export function showQuery() {}
 
-export async function getResponse() {
+export async function getResponse(lastQuery: string) {
   const data = {
     text: 'To find out how many accounts you have, you can use the following query:',
 
@@ -67,4 +67,3 @@ export async function getResponse() {
   };
   return data;
 }
-
